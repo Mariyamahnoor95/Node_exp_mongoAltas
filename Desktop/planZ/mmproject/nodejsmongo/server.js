@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 const {MongoClient} = require('mongodb')
 
 async function main(){
-    const uri ="mongodb+srv://mahnoor95:12345@cluster0.gypxb.mongodb.net/mmproject?retryWrites=true&w=majority";
+ 
     const client = new MongoClient(uri, {useNewUrlParser: true, useUnifiedTopology: true})
     try {
         await client.connect();
